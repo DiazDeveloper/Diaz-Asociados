@@ -1,0 +1,215 @@
+/* =========================================
+   IMPORTACIÓN DE FUENTES
+   ========================================= */
+/* Una sola línea optimizada con todos los pesos (Inter, Jost, Merriweather y Mulish) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Jost:wght@400;600&family=Merriweather:wght@300;400;700;900&family=Mulish:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    font-family: 'Jost', sans-serif;
+}
+
+/* =========================================
+   HEADER / NAVEGACIÓN
+   ========================================= */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.4s ease, padding 0.4s ease;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: #1a1511;
+    padding: 15px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-text {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    color: #604B33;
+}
+
+.btn-consulta {
+    background-color: white;
+    color: #3D2B1F;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-consulta:hover {
+    background-color: #f0f0f0;
+}
+
+/* =========================================
+   FOOTER GLOBAL
+   ========================================= */
+.main-footer {
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    padding: 60px 50px 20px 50px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.branding-col {
+    flex: 1.5;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 40px;
+    /* filter: brightness(0) invert(1); */ /* Úsalo si tu logo es negro y necesitas que sea blanco */
+}
+
+.footer-logo-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600; /* Jost Semibold */
+    font-size: 20px;
+}
+
+.footer-col h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+.footer-desc, 
+.footer-col ul li, 
+.footer-col ul li a, 
+.footer-bottom p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    font-size: 15px;
+    line-height: 1.8;
+    color: #CCCCCC;
+    text-decoration: none;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a:hover {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* --- REDES SOCIALES (Círculos Blancos) --- */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.footer-icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.footer-icon-circle img {
+    height: 16px; 
+    width: auto;
+    /* IMPORTANTE: Si tus iconos de redes originales son blancos, 
+       descomenta la siguiente línea para que se vuelvan negros 
+       y puedan verse dentro del círculo blanco. */
+    /* filter: brightness(0); */
+}
+
+.footer-icon-circle:hover {
+    transform: scale(1.1);
+    background-color: #EAEAEA; 
+}
+
+/* --- COPYRIGHT --- */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    margin: 0;
+    color: #888888;
+}

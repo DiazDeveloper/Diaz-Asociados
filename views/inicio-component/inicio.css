@@ -1,0 +1,611 @@
+/* --- SECCIÓN HERO --- */
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 100vh;
+    margin: 0; /* Asegura que no hay espacio extra abajo */
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-title {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-family: 'Jost', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-asesoria {
+    background-color: white;
+    color: #3D2B1F;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+/* --- SECCIÓN DE COMPROMISO Y SERVICIOS --- */
+.compromiso-section {
+    background-color: #FAF9F4;
+    margin: 0; /* Elimina cualquier separación con el Hero */
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px; 
+}
+
+/* Tarjeta Blanca Principal */
+.compromiso-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    display: flex;
+    max-width: 1000px; /* Ajustado para que se vea proporcionado como en tu diseño */
+    width: 100%;
+    overflow: hidden; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+}
+
+.compromiso-texto {
+    flex: 1; 
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.compromiso-texto h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #3D2B1F;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    margin-top: 0; /* IMPORTANTE: Evita que el margen del h2 empuje la tarjeta hacia abajo */
+}
+
+.compromiso-texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.compromiso-imagen {
+    flex: 1; 
+    display: flex;
+}
+
+.compromiso-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+
+/* Cuadrícula Inferior */
+.servicios-grid {
+    display: flex;
+    gap: 60px;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+}
+
+.servicio-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.servicio-item img {
+    height: 45px; 
+    margin-bottom: 20px;
+}
+
+.servicio-item h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #604B33;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.servicio-item p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- SECCIÓN 3: BANNER NEGRO (CTA) --- */
+.cta-banner {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-banner h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Light */
+    font-size: 2.2rem;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.btn-habla {
+    background-color: #604B33;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif; /* Cambiado a Merriweather */
+    font-weight: 700; /* Bold */
+    font-size: 16px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-habla:hover {
+    background-color: #4A3A27; /* Un tono más oscuro para el hover */
+}
+
+/* --- SECCIÓN 4: EQUIPO DE EXPERTOS --- */
+.equipo-section {
+    background-color: #FAF9F4;
+    padding: 100px 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.equipo-section > h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Bold */
+    color: #604B33;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.equipo-descripcion {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Regular */
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 60px auto; /* Centra el párrafo y da espacio abajo */
+}
+
+.equipo-grid {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.equipo-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajuste de las imágenes de los abogados */
+.lawyer-img {
+    width: 100%;
+    background-color: #FFFFFF; /* Fondo blanco por si las imágenes son PNG transparentes */
+    border-radius: 15px; /* Bordes redondeados según el diseño */
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Sombra sutil a la tarjeta de la foto */
+}
+
+.equipo-card h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Bold */
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.equipo-card p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Regular */
+    color: #94744E;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+}
+
+/* Redes Sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons img {
+    height: 16px; /* Ajusta este valor dependiendo de cómo se vean tus iconos originales */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Pequeño efecto al pasar el mouse por las redes */
+}
+
+.icon-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 32px; /* Ancho del círculo */
+    height: 32px; /* Alto del círculo */
+    border-radius: 50%; /* Convierte el cuadrado en círculo */
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra muy sutil para resaltarlo del fondo FAF9F4 */
+}
+
+/* Ajuste de la imagen dentro del círculo */
+.icon-circle img {
+    height: 14px; /* Tamaño del icono dentro del círculo */
+    width: auto;
+}
+
+/* Efecto hover */
+.icon-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+/* --- SECCIÓN 5: EXCELENCIA LEGAL --- */
+.excelencia-section {
+    background-color: #FAF9F4;
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.excelencia-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 80px;
+}
+
+.excelencia-texto {
+    flex: 1;
+    text-align: center; /* Alineado al centro según tu imagen */
+}
+
+.excelencia-texto h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.excelencia-texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.excelencia-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.excelencia-logo img {
+    height: 250px; /* Ajusta este valor dependiendo de tu imagen original */
+    margin-bottom: 20px;
+}
+
+.excelencia-logo h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #000000;
+    font-size: 2.2rem;
+    margin: 0 0 5px 0;
+}
+
+.excelencia-logo p {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Merry Light */
+    color: #000000;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* --- SECCIÓN 6: TESTIMONIOS --- */
+.testimonios-section {
+    background-color: #FFFFFF;
+    padding: 100px 50px;
+    text-align: center;
+    margin: 0;
+}
+
+.testimonios-section h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.testimonios-subtitle {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+/* Estructura del Testimonio */
+.testimonio-wrapper {
+    display: flex;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: left;
+    gap: 20px;
+}
+
+/* Elementos visuales laterales (Línea y comilla) */
+.quote-decoration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.quote-line {
+    width: 2px;
+    height: 35px;
+    background-color: #94744E;
+}
+
+.quote-icon {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #94744E;
+    font-size: 3rem;
+    line-height: 0.8;
+    margin-top: 5px;
+}
+
+/* Textos del testimonio */
+.quote-body {
+    flex: 1;
+}
+
+.quote-text {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.autor-nombre {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Merry Light */
+    color: #000000;
+    font-size: 1.4rem;
+    margin: 0 0 5px 0;
+}
+
+.autor-cargo {
+    font-family: 'Jost', sans-serif;
+    font-weight: 600; /* Jost Semibold */
+    color: #94744E;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* --- SECCIÓN 7: TOME EL CONTROL --- */
+.control-section {
+    /* Fondo con la imagen proporcionada */
+    background-image: url('img/fondo_asesoria.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #1a1511; /* Color de respaldo en caso de que la imagen tarde en cargar */
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.control-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    gap: 80px;
+}
+
+.control-texto {
+    flex: 1;
+    text-align: center;
+    color: #FFFFFF; /* Texto blanco para contrastar con el fondo oscuro */
+}
+
+.control-texto h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.control-texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-solicitar {
+    background-color: #604B33;
+    color: #FFFFFF;
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Merry Light */
+    font-size: 16px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-solicitar:hover {
+    background-color: #4A3A27;
+}
+
+.control-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.control-imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px; /* Añade un pequeño borde redondeado a la foto */
+}
+
+/* --- SECCIÓN 8: HISTORIAS DE ÉXITO --- */
+.historias-section {
+    background-color: #FAF9F4;
+    padding: 100px 50px;
+    margin: 0;
+    text-align: center;
+}
+
+.historias-header h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.historias-header p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 750px;
+    margin: 0 auto 60px auto;
+}
+
+.historias-grid {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.historia-card {
+    flex: 1;
+    text-align: left; /* El contenido de las tarjetas va alineado a la izquierda */
+}
+
+.historia-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    /* Si las fotos originales no tienen el mismo tamaño, object-fit ayuda a uniformarlas */
+    object-fit: cover; 
+}
+
+.historia-fecha {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #3D2B1F; 
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.historia-card h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* Merry Regular */
+    color: #604B33;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0 0 15px 0;
+}
+
+.historia-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Inter Semibold */
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 1px; /* Separación de letras para darle el toque corporativo */
+    display: inline-block;
+}
+
+.historia-link:hover {
+    text-decoration: underline;
+}

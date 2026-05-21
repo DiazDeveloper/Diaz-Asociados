@@ -1,0 +1,330 @@
+/* --- SECCIÓN 1: HERO DE NOSOTROS --- */
+.nosotros-hero {
+    /* Actualizado a hero.png */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; 
+    margin: 0;
+    padding-top: 60px; 
+}
+.nosotros-hero h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Merry Light */
+    color: #FFFFFF;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+}
+
+/* --- SECCIÓN 2: DIFERENCIAS DE ALTO VALOR --- */
+.diferencias-section {
+    background-color: #FFFFFF;
+    padding: 100px 50px 60px 50px;
+    margin: 0;
+}
+
+.diferencias-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.diferencias-header h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.diferencias-header p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.diferencias-grid {
+    display: flex;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.diferencia-card {
+    flex: 1;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.diferencia-card img {
+    height: 45px;
+    width: auto;
+    margin-bottom: 25px;
+}
+
+.diferencia-card h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.diferencia-card p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* --- SECCIÓN 3: HIGHLIGHTS (Disponibilidad, etc.) --- */
+/* --- SECCIÓN 3: HIGHLIGHTS --- */
+.highlights-section {
+    background-color: #FFFFFF;
+    padding: 20px 50px 100px 50px;
+    margin: 0;
+}
+
+.highlights-grid {
+    display: flex;
+    /* justify-content: space-between empuja los extremos a los bordes 
+       y reparte el espacio que sobra perfectamente entre los elementos */
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px; /* Un espacio mínimo por si la pantalla se hace pequeña */
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si la pantalla se reduce */
+}
+
+.highlight-item {
+    /* Eliminamos flex: 1 para que el ancho sea automático e inteligente */
+    flex: 0 1 auto; 
+}
+
+.highlight-item h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900; /* Merry Black */
+    color: #604B33;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    margin: 0;
+}
+/* --- SECCIÓN 4: BANNER CONFIANZA --- */
+.confianza-banner {
+    background-color: #0F0D0C; /* Tono muy oscuro casi negro */
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.confianza-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.confianza-logo img {
+    height: 140px; /* Ajusta según el tamaño de tu pilar */
+    width: auto;
+}
+
+.confianza-texto {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.confianza-texto h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.confianza-texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    font-size: 15px;
+    color: #CCCCCC;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* --- SECCIÓN 5: MISIÓN Y VISIÓN --- */
+.mision-vision-section {
+    background-color: #FAF9F4; /* Fondo crema según tu diseño */
+    padding: 100px 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.mv-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px; /* Separación entre el bloque de misión y el de visión */
+    max-width: 1100px;
+    width: 100%;
+}
+
+.mv-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.mv-texto {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.mv-texto h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.2rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.mv-texto p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.mv-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.mv-imagen img {
+    width: 100%;
+    max-width: 500px; /* Ajusta esto si las fotos son muy grandes */
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- SECCIÓN 6: PUBLICACIONES --- */
+.publicaciones-section {
+    background-color: #FFFFFF; /* Fondo blanco para esta sección */
+    padding: 100px 50px;
+    margin: 0;
+}
+
+.pub-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pub-header h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    color: #604B33;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.pub-header p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    color: #000000;
+    font-size: 16px;
+    margin: 0;
+}
+
+.pub-grid {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.pub-card {
+    flex: 1;
+    text-align: left;
+}
+
+.pub-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.pub-fecha {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400; /* Inter Regular */
+    color: #555555; /* Un gris sutil para la fecha */
+    font-size: 13px;
+    margin: 0 0 10px 0;
+}
+
+.pub-card h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* Merry Regular */
+    color: #604B33;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+}
+
+.pub-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600; /* Inter Semi Bold */
+    color: #000000;
+    font-size: 11px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio entre el texto "READ MORE" y la flecha */
+    transition: opacity 0.2s ease;
+}
+
+.pub-link:hover {
+    opacity: 0.7;
+}
+
+.icono-flecha {
+    height: 10px; /* Ajusta el tamaño de tu flechita */
+    width: auto;
+}

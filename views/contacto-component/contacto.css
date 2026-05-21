@@ -1,0 +1,126 @@
+/* --- SECCIÓN HERO DE CONTACTO --- */
+.contacto-hero {
+    /* Fondo que ocupa todo el mockup con filtro oscuro */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('img/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* min-height: 100vh asegura que ocupe toda la pantalla al inicio */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* El padding top es más grande para evitar que el header estático tape "CONTACTANOS" */
+    padding: 130px 50px 80px 50px; 
+    margin: 0;
+    color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.contacto-header h1 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; /* Merry Light */
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.contacto-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 80px;
+    align-items: center;
+}
+
+/* --- COLUMNA IZQUIERDA (Info) --- */
+.contacto-info {
+    flex: 1.2;
+}
+
+.contacto-info h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 2.2rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contacto-desc {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    font-size: 15px;
+    line-height: 1.7;
+    color: #E0E0E0; 
+    margin-bottom: 60px;
+    max-width: 90%;
+}
+
+/* Cuadrícula de 2x2 para los datos de contacto */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px; /* 50px espacio vertical, 30px horizontal */
+}
+
+.contacto-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.contacto-item img {
+    width: 26px; /* Ajusta según el tamaño de tus íconos */
+    height: auto;
+    margin-top: 3px;
+}
+
+.item-text h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.item-text p {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400; /* Jost Regular */
+    font-size: 14px;
+    line-height: 1.6;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+/* --- COLUMNA DERECHA (Logo) --- */
+.contacto-logo {
+    flex: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contacto-logo img {
+    height: 280px; 
+    width: auto;
+}
+
+.logo-texto-grande h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700; /* Merry Bold */
+    font-size: 2.2rem;
+    margin: 0 0 5px 0;
+}
+
+.logo-texto-grande p {
+    font-family: 'Mulish', sans-serif; /* Tipografía Mulish Light */
+    font-weight: 300; 
+    font-size: 1.8rem;
+    margin: 0;
+}
